@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Web</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/smile.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Main navigation -->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto smooth-scroll">
+            <li class="nav-item">
+              <a class="nav-link" id="index">Food
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="Music" data-offset="90">Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="Scenery" data-offset="90">Scenery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="Read" data-offset="90">Read</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="Film" data-offset="30">Film</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="Summary" data-offset="90">Summary</a>
+            </li>
+          </ul>
+          <!-- Social Icon  -->
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a class="nav-link">
+                <i class="fab fa-facebook-f light-green-text-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <i class="fab fa-twitter light-green-text-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <i class="fab fa-instagram light-green-text-2"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <!-- Full Page Intro -->
+    <div class="view">
+      <img src="img/45.jpeg">
+      <!-- Mask & flexbox options-->
+      <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+        <!-- Content -->
+        <div class="container px-md-3 px-sm-0">
+          <!--Grid row-->
+          <div class="row wow fadeIn">
+            <!--Grid column-->
+            <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+              <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Read</h3>
+              <hr class="hr-light my-4 w-75">
+              <h4 class="subtext-header mt-2 mb-4">Books are such a tool to transform the soul. What mankind needs is
+                enlightening nourishment. And reading, it is this kind of nourishment </h4>
+              <a href="#!" class="btn btn-rounded btn-outline-white">
+                <i class="fas fa-home "></i> Visit us
+              </a>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Content -->
+      </div>
+      <!-- Mask & flexbox options-->
+    </div>
+    <!-- Full Page Intro -->
+  </header>
+  <!--Main layout-->
+  <main>
+
+    <hr class="my-5">
+
+    <section id="statistics" class="text-center py-5" style="background-color: #eee;">
+
+      <div class="container">
+        <h2 class="h1-responsive font-weight-bold text-center my-5">Reading Statistics </h2>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <canvas id="myChart"></canvas>
+            <br>
+            <p class="black-text w-responsive font-weight-light mx-auto mb-5">1. Annual per capita book reading volume
+              of minors</p>
+          </div>
+          <div class="col-md-5">
+            <canvas id="lineChart"></canvas>
+            <br>
+            <p class="black-text w-responsive font-weight-light mx-auto mb-5">2. Changes in comprehensive reading rate
+              over 10 years </p>
+          </div>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <canvas id="horizontalBar"></canvas>
+            <br>
+            <p class="black-text w-responsive font-weight-light mx-auto mb-5">3. Reading volume of various publications
+              in 2016 and 2017 </p>
+          </div>
+          <div class="col-md-5">
+            <canvas id="labelChart"></canvas>
+            <br>
+            <p class="black-text w-responsive font-weight-light mx-auto mb-5">4. Citizens' Voice for Exhibition Reading
+              Activities </p>
+          </div>
+        </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="recommendations" class="text-center py-5" style="background-color: #eee;">
+      <div class="container">
+        <h2 class="h1-responsive font-weight-bold text-center my-5">Reading Recommendations</h2>
+        <div class="main-wrapper">
+          <div class="container-fluid">
+
+            <div class="row">
+              <!--Main column-->
+              <div class="col-md-12">
+                <div class="text-center">
+
+
+
+                </div>
+                <div class="container-fluid mt-5">
+
+                  <ul class="nav md-pills pills-info d-flex justify-content-center" id="myNav">
+                    <li class="nav-item">
+                      <a class="nav-link border border-info" data-toggle="tab" href="#panel1" role="tab"
+                        aria-selected="true">Literature</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-info active" data-toggle="tab" href="#panel2" role="tab"
+                        aria-selected="false">Fiction</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-info" data-toggle="tab" href="#panel3" role="tab"
+                        aria-selected="false">Economy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-info" data-toggle="tab" href="#panel4" role="tab">Military</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-info" data-toggle="tab" href="#panel5" role="tab">Law</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border border-info" data-toggle="tab" href="#panel6" role="tab">Medical Science
+                      </a>
+                    </li>
+                  </ul>
+
+                  <!-- Tab panels -->
+                  <div class="tab-content pt-0">
+
+                    <!--Panel 1-->
+                    <div class="tab-pane fade p-5" id="panel1" role="tabpanel">
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <div class="col-xl-1 col-lg-2"></div>
+
+                        <!--Grid column-->
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;Shanju Notes&raquo;</strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Yu Qiuyu (China)</strong>
+                          </h6>
+                          <p class="pb-3">"Notes on Mountain Residence" is Yu Qiuyu’s second collection of essays.
+                            It was written in 1992 and completed in 1994. It mainly describes the author’s own insights
+                            during his visit to Chinese civilization.
+                            The whole work expresses his feelings about the prosperity and decline of civilization and
+                            his appeal to respect for culture. And the yearning for a sound personality.
+                            The book was published in Taiwan in August 1995, and the mainland edition was published by
+                            Wenhui Publishing House in September 1998.
+                          </p>
+                          <br>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+
+                        </div>
+                        <!--Grid column-->
+
+                        <div class="col-xl-2 col-lg-2"></div>
+
+                        <!--Grid column-->
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;Autumn Remembrance&raquo; </strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Shi Tiesheng (China)</strong>
+                          </h6>
+                          <p class="pb-3">"Autumn Remembrance", a prose written in 1981 by the contemporary Chinese
+                            writer Shi Tiesheng.
+                            This article narrates Shi Tiesheng’s memories of his deceased mother.
+                            It shows Shi Tiesheng’s deep memory of his mother, his endless love for his mother, his
+                            praise of maternal love, and Shi Tiesheng’s remorse for “children’s desire to raise but
+                            relatives do not wait”,
+                            and The remorse for my mother's incomprehension in the early years is very moving.
+                            The language of the full text is plain and simple, without careful weaving and carving, but
+                            the sentences are sentimental, and the words are like gold.
+                          </p>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+                        </div>
+                        <!--Grid row-->
+                      </div>
+                      <br>
+                      <!--Grid row-->
+                      <div class="row">
+                        <div class="col-xl-4 col-lg-3"></div>
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;See Off&raquo;</strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Long Yingtai (China)</strong>
+                          </h6>
+                          <p class="pb-3">"See Off" is written by the writer Long Yingtai following "My Child, Take Your
+                            Time" and "Dear Andre".
+                            Long Yingtai has released a work that ponders "Life and Death Questions". It is a perceptive
+                            book of life.
+                            "Watching" is a life and death notebook, profound, sad, and beautiful.
+                            The seventy-three essays of "Mingsong" write about the death of the father, the old age of
+                            the mother, the separation of the son, the care of friends, and the brothers' work together,
+                            writing about failure and vulnerability,
+                            loss and letting go, writing about lingering and unwillingness nothingness. She wrote so
+                            faintly, like a candlelight shining on the mountain wall.
+                          </p>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+                        </div>
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+
+                    <!--/.Panel 1-->
+
+                    <div class="tab-pane fade in show active p-5" id="panel2" role="tabpanel">
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <div class="col-xl-1 col-lg-2"></div>
+
+                        <!--Grid column-->
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;Ordinary World&raquo;</strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Lu Yao (China)</strong>
+                          </h6>
+                          <p class="pb-3">"The Ordinary World" is a million-character novel created by the Chinese
+                            writer Lu Yao, which is a panoramic view of contemporary urban and rural social life in
+                            China. There are three parts in the book.
+                            First published in December 1986.
+                            The book takes China’s mid-70s to mid-1980s as a background, through complex conflicts and
+                            entanglements, centering on the two brothers Sun Shaoan and Sun Shaoping, it portrays the
+                            images of many ordinary people from all walks of life at that time;
+                            labor and love, frustration and pursuit , Pain and joy, daily life and huge social conflicts
+                            are intertwined, profoundly showing the difficult and tortuous road that ordinary people
+                            have traversed in the historical process of the great age.
+                            <br>
+                          </p>
+                          <br>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+
+                        </div>
+                        <!--Grid column-->
+
+                        <div class="col-xl-2 col-lg-2"></div>
+
+                        <!--Grid column-->
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;A Hundred Years of Solitude&raquo; </strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Garcia Márquez (Colombia)</strong>
+                          </h6>
+                          <p class="pb-3">"A Hundred Years of Solitude" is a novel created by Colombian writer García
+                            Marquez.It is his masterpiece and a masterpiece of Latin American magical realism
+                            literature.
+                            It is hailed as "a great work that reproduces the historical and social landscape of Latin
+                            America."
+                            The work describes the legendary stories of seven generations of the Buendia family, and the
+                            century-old rise and fall of Macondo, a small town on the coast of the Caribbean Sea,
+                            reflecting the changing history of Latin America over the past century.
+                            The work incorporates myths and legends, folk tales, religious allusions and other
+                            mysterious factors, cleverly blending reality and illusion,
+                            showing a magnificent world of imagination, and becoming one of the most important classic
+                            literary masterpieces of the 20th century.
+                          </p>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+                        </div>
+                        <!--Grid row-->
+                      </div>
+                      <br>
+                      <!--Grid row-->
+                      <div class="row">
+                        <div class="col-xl-4 col-lg-3"></div>
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;A Million Pounds&raquo;</strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Mark Twain (American)</strong>
+                          </h6>
+                          <p class="pb-3">"A Million Pounds" is a short story written by American writer Mark Twain,
+                            published in 1893. It tells about an adventure of Henry Adams, a poor American clerk, in
+                            London.
+                            The two rich brothers in London bet they would lend Henry an uncashable million dollar bill
+                            to see how he would end up in a month.
+                            When the one-month deadline came, Henry not only did not starve to death or was arrested,
+                            but became a rich man, and won the heart of a beautiful lady. The article uses its slightly
+                            exaggerated artistic techniques
+                            to reproduce the satire and humor in the master's novels, exposing the idea of money worship
+                            in British society in the early 20th century.
+                          </p>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+                        </div>
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+
+                    <div class="tab-pane fade p-5" id="panel3" role="tabpanel">
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <div class="col-xl-1 col-lg-2"></div>
+
+                        <!--Grid column-->
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;Invest in people&raquo;</strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Theodore Schultz (American)</strong>
+                          </h6>
+                          <p class="pb-3">This book is one of the important works of Nobel laureate Theodore Schultz.
+                            This work is also an important work of Schultz's research on human capital. The book
+                            consists of seven chapters. The first four chapters are mainly about the author’s
+                            theoretical expositions, involving poverty economics, population quality economics,
+                            education economics, and human time value economics; the last three chapters are about the
+                            author’s American education, scientific research, and international Attacks on the chaos and
+                            distortions of aid agencies.
+                            <br>
+                          </p>
+                          <br>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+
+                        </div>
+                        <!--Grid column-->
+
+                        <div class="col-xl-2 col-lg-2"></div>
+
+                        <!--Grid column-->
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;Capital Accumulation Theory&raquo; </strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Joan Robinson (England)</strong>
+                          </h6>
+                          <p class="pb-3">The author divides social production into investment goods and consumer goods,
+                            and divides total social income into profit and wages. Under this model, he explores the
+                            "instinct impulse" of capitalists, and explores the influence of population growth and
+                            technological progress on capital accumulation. Analyze the distribution of national income
+                            between profits and wages and the mechanisms and conditions of economic growth in the
+                            process of capital accumulation.
+                          </p>
+                          <br><br>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+                        </div>
+                        <!--Grid row-->
+                      </div>
+                      <br>
+                      <!--Grid row-->
+                      <div class="row">
+                        <div class="col-xl-4 col-lg-3"></div>
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;Political Economy Past and Present&raquo;</strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> L.Robbins (England)</strong>
+                          </h6>
+                          <p class="pb-3">In this book, the author combines his research on the history of economic
+                            thought with research on economic policies, and systematically expounds the relationship
+                            between early economic thoughts and their practical applications. The scope includes
+                            consumption, production organization, and the entire System stability, welfare and
+                            distribution, and international trade, and try to test the extent and meaning of these
+                            theories are effective.
+                          </p>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+                        </div>
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+
+                    <div class="tab-pane fade p-5" id="panel4" role="tabpanel">
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <div class="col-xl-1 col-lg-2"></div>
+
+                        <!--Grid column-->
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;On War&raquo;</strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Karl von Clausewitz (Germany)</strong>
+                          </h6>
+                          <p class="pb-3">"On War" is hailed as a classic of modern Western military theories, and has
+                            played a major role in the formation and development of modern Western military thought. It
+                            is hailed as one of the 100 books that have influenced the course of history. Clausewitz
+                            himself is therefore regarded as the originator of modern Western military theory. In the
+                            book, the author reveals the nature of war that is subordinate to politics, points out the
+                            role of human factors, especially spiritual forces, expounds the historical trend of the
+                            nature of war changing to civil war, and discusses strategy and tactics, offensive and
+                            defensive, and the purpose of war. The dialectical relationship between tactics and means
+                            puts forward theories such as concentrating superior forces to wipe out the enemy.
+                          </p>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+
+                        </div>
+                        <!--Grid column-->
+
+                        <div class="col-xl-2 col-lg-2"></div>
+
+                        <!--Grid column-->
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;Science of Winning&raquo; </strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Suvorov (Russia)</strong>
+                          </h6>
+                          <p class="pb-3">The content reflects Suvorov's strategic and tactical thinking and military
+                            governance, including military achievements, military thinking, command style and command
+                            art, etc., and has influenced the Russian military for several generations. After the
+                            October Revolution, Lenin's first Red Army soldier's manual also quoted its main principles.
+                            During the Second World War, Soviet generals at all levels highly praised Suvorov’s military
+                            strategy and tactical principles. The Soviet Supreme Presidium also promulgated the
+                            formulation of the first, second and third levels of Suvolo in July 1942. Order of the
+                            military medal of the husband. Together with the name of its author, "Science of Victory"
+                            has received widespread attention from military theorists around the world.
+                          </p>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+                        </div>
+                        <!--Grid row-->
+                      </div>
+                      <br>
+                      <!--Grid row-->
+                      <div class="row">
+                        <div class="col-xl-4 col-lg-3"></div>
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;On Protracted War&raquo;</strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Mao Zedong (China)</strong>
+                          </h6>
+                          <p class="pb-3">"On the Protracted War" is a speech made by the proletarian revolutionary Mao
+                            Zedong at the Yan'an Anti-Japanese War Research Conference from May 26 to June 3, 1938. It
+                            is a military and political work on the policies of China's Anti-Japanese War. It is a great
+                            work. The classic military theory of Marxism-Leninism was first published in July 1938. On
+                            the basis of summing up the experience of the early days of the War of Resistance Against
+                            Japan, Mao Zedong aimed at some members of the Chinese Kuomintang's "China must die" and
+                            "China's quick victory theory", as well as the tendency of some members of the Chinese
+                            Communist Party to despise guerrilla warfare. The strategy of winning the war against Japan.
+                          </p>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+                        </div>
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+
+                    <div class="tab-pane fade p-5" id="panel5" role="tabpanel">
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <div class="col-xl-1 col-lg-2"></div>
+
+                        <!--Grid column-->
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;Why Unfair Trials? Western Trial History&raquo;</strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Kadri (England)</strong>
+                          </h6>
+                          <p class="pb-3">Through many interesting popular historical stories, this book clearly traces
+                            the development history of criminal trials, using a broad historical lens to show how the
+                            defects of past trials stubbornly appear in the present, and show how long the judicial
+                            trial system has gone through. Reaching the current height will enable readers to gain moral
+                            and political insights, and to better understand today's unstable times.
+                          </p>
+                          <br><br><br><br>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+                        </div>
+                        <!--Grid column-->
+
+                        <div class="col-xl-2 col-lg-2"></div>
+
+                        <!--Grid column-->
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;Sweeping the Fallen Leaves for the Winter&raquo; </strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Linda (China)</strong>
+                          </h6>
+                          <p class="pb-3">The book is divided into five series: the first series is about American
+                            historical stories; the second series is about the legal rules of the country; the third
+                            series is about some specific cases to tell the story about the judicial process; the fourth
+                            series is mainly through monasticism The stories of scholars, ascetics, and Auschwitz tell
+                            the evil consequences of "intolerance"; the fifth series are the author's thoughts about
+                            reading and seeing and hearing. The stories of the five series of articles are very strong,
+                            not only the plot is ups and downs, but the connotation is also deep. It is not difficult
+                            for readers to feel the power of thought in the relaxed reading.
+                          </p>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+                        </div>
+                        <!--Grid row-->
+                      </div>
+                      <br>
+                      <!--Grid row-->
+                      <div class="row">
+                        <div class="col-xl-4 col-lg-3"></div>
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;Looking for the Imprint of Law&raquo;</strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Yu Dingyu (China)</strong>
+                          </h6>
+                          <p class="pb-3">What is the law? This is a question that the author of this book has been
+                            asking. Following the imprint of the law, he embarked on a great spiritual journey: through
+                            the Nile Pygmies' preemptive conception of the food banana he discovered, confirming the
+                            most primitive footprint of human law---the footprint of "rights" ; Through the trial of
+                            Athena based on human nature in ancient Greek mythology, it declared the natural theological
+                            sentiments and religious feelings of the ancient Greeks; by holding a scale sword and
+                            blindfolded the goddess of justice, it declared that the ancient Romans were "mature and
+                            stable with the law." "The expectation of "fairness and justice".
+                          </p>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+                        </div>
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+
+                    <div class="tab-pane fade p-5" id="panel6" role="tabpanel">
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <div class="col-xl-1 col-lg-2"></div>
+
+                        <!--Grid column-->
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;Way of life&raquo;</strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> William Osler (Canada )</strong>
+                          </h6>
+                          <p class="pb-3">This book is a collection of twenty lectures by William Osler, the father of
+                            modern clinical medicine, and is regarded as one of the important ideological documents
+                            written in the 20th century. Osler has served as a professor of medicine at McGill
+                            University, University of Pennsylvania and Johns Hopkins University. In the book, the author
+                            brings his profound classical humanistic cultivation into the field of medicine, with
+                            tentacles covering medical ethics, medical care and humanitarian care, and the relationship
+                            between doctors and patients. Between the lines is filled with his wise life and medical
+                            philosophy.
+                          </p>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+                        </div>
+                        <!--Grid column-->
+
+                        <div class="col-xl-2 col-lg-2"></div>
+
+                        <!--Grid column-->
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;Cells&raquo; </strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Joshua Z. Rappoport (American)</strong>
+                          </h6>
+                          <p class="pb-3">The language of Rappoport's works is very concise and fascinating to read. He
+                            can efficiently and easily communicate the cutting-edge ideas that lay the foundation of
+                            cell biology, and point out the highlights of the history of cell biology ideas and
+                            technology. Using vivid intentions and sharp metaphors, he successfully sublimated the
+                            subject in a poetic and respectful way.
+                          </p>
+                          <br><br><br><br>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+                        </div>
+                        <!--Grid row-->
+                      </div>
+                      <br>
+                      <!--Grid row-->
+                      <div class="row">
+                        <div class="col-xl-4 col-lg-3"></div>
+                        <div class="col-xl-4 col-lg-6">
+                          <h3 class="py-3 font-weight-bold">
+                            <strong>&laquo;White Robe&raquo;</strong>
+                          </h3>
+                          <h6 class="purple-text">
+                            <strong> Ellen L.Rothman (American)</strong>
+                          </h6>
+                          <p class="pb-3">The author Ellen L.Rothman is a 1993 student at Harvard Medical School. She
+                            used her clear and delicate writing to write down her 4 years of growth in Harvard Medical
+                            School. The book is divided into three chapters, namely "Harvard First Year", "Harvard
+                            Second Year" and "Two-year Clinical Internship". Through the book, we can not only truly
+                            understand how a young student grows into a doctor with a white robe, but also follow the
+                            author to carry out continuous medical humanistic thinking: how to deal with the
+                            doctor-patient relationship, how to overcome learning, and internship All kinds of
+                            difficulties, how to face the test of life and death.
+                          </p>
+                          <a href="https://mdbootstrap.com/snippets/jquery/marta-szymanska/1317891" target="_blank"
+                            class="btn btn-secondary btn-rounded btn-md"><i class="fa fa-book" aria-hidden="true"></i>
+                            Learn More</a>
+                        </div>
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="why" class="text-center py-5" style="background-color: #eee;">
+      <div class="container">
+        <h2 class="h1-responsive font-weight-bold text-center my-5">Why we need to read</h2>
+        <div class="row">
+          <div class="col-md-2">
+            <img src="img/46.jpg" class="rounded-circle" alt="Sample avatar image.">
+          </div>
+          <div class="col-md-1"></div>
+          <p class="col-md-6 pb-3 text-center"><br><br><br>For me, reading is the best way to dispel the unhappiness in
+            life. There is no distress that cannot be dispelled by the school.<br><br>——Montesquieu</p>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <p class="col-md-6 pb-3 text-center"><br><br><br>Reading all profound books should be like this: first, use
+            your own ability to understand; second, use your own ability to criticize.<br><br>——Guo Moruo</p>
+          <div class="col-md-1"></div>
+          <div class="col-md-2">
+            <img src="img/47.jpg" class="rounded-circle" alt="Sample avatar image.">
+          </div>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-md-2">
+            <img src="img/48.jpg" class="rounded-circle" alt="Sample avatar image.">
+          </div>
+          <div class="col-md-1"></div>
+          <p class="col-md-6 pb-3 text-center"><br><br><br>Reading enriches people, discussion makes people witty, notes
+            makes people accurate, reading history makes people wise, reading poetry makes people smart,
+            mathematics makes people thoughtful, science makes people deep, ethics makes people solemn, and logical
+            rhetoric makes people eloquent. Anyone who has learned something will become a character.<br><br>——Bacon</p>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <p class="col-md-6 pb-3 text-center"><br><br><br>Reading is a grand tour of the soul. You can discover famous
+            mountains, giant rivers, historical sites, deep forests and valleys, and exotic flowers at any
+            time.<br><br>——Francs</p>
+          <div class="col-md-1"></div>
+          <div class="col-md-2">
+            <img src="img/49.jpg" class="rounded-circle" alt="Sample avatar image.">
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <!--Main layout-->
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small mdb-color pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <div class="row text-center text-md-left mt-3 pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mt-3">
+          <a href="index.html" class=" mb-4 font-weight-bold">Food</a>
+          <p><br><a href="index.html#share">Share</a></p>
+          <p><a href="index.html#cuisine">International Cuisine</a></p>
+          <p><a href="index.html#learn">Learn to do</a></p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <a href="Music.html" class=" mb-4 font-weight-bold">Music</a>
+          <p>
+            <br>
+            <a href="Music.html#list">Music list</a>
+          </p>
+          <p>
+            <a href="Music.html#video">Music video</a>
+          </p>
+          <p>
+            <a href="Music.html#classic">Classic Music</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <a href="Scenery.html" class="mb-4 font-weight-bold">Scenery</a>
+          <p>
+            <br>
+            <a href="Scenery.html#oriental">Oriental Colors</a>
+          </p>
+          <p>
+            <a href="Scenery.html#western">Western Colors</a>
+          </p>
+          <p>
+            <a href="Scenery.html#beautiful">Beautiful Scenery</a>
+          </p>
+        </div>
+
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <a href="Read.html" class="mb-4 font-weight-bold">Read</a>
+          <p>
+            <br>
+            <a href="Read.html#statistics">Reading Statistics</a>
+          </p>
+          <p>
+            <a href="Read.html#recommendations">Recommendations</a>
+          </p>
+          <p>
+            <a href="Read.html#why">Why we need to read</a>
+          </p>
+        </div>
+
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mt-3">
+          <a href="Film.html" class=" mb-4 font-weight-bold">Film</a>
+          <p>
+            <br>
+            <a href="Film.html#classic">Classic Movies</a>
+          </p>
+          <p>
+            <a href="Film.html#star">Movie Star</a>
+          </p>
+          <p>
+            <a href="Film.html#recommended">Recommended Today</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+
+      <hr>
+
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1">
+            <i class="fa fa-coffee" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1">
+            <i class="fa fa-music" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1">
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-dribbble mx-1">
+            <i class="fa fa-film" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="https://yuedu.baidu.com/">Yuedu.baidu.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript">
+
+    document.getElementById("index").onclick = function () {
+      var newwin = window.open();
+      newwin.location.assign('index.html');
+    }
+    document.getElementById("Music").onclick = function () {
+      var newwin = window.open();
+      newwin.location.assign('Music.html');
+    }
+    document.getElementById("Scenery").onclick = function () {
+      var newwin = window.open();
+      newwin.location.assign('Scenery.html');
+    }
+    document.getElementById("Read").onclick = function () {
+      var newwin = window.open();
+      newwin.location.assign('Read.html');
+    }
+    document.getElementById("Film").onclick = function () {
+      var newwin = window.open();
+      newwin.location.assign('Film.html');
+    }
+    document.getElementById("Summary").onclick = function () {
+      var newwin = window.open();
+      newwin.location.assign('Summary.html');
+    }
+
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ["0~8", "9~13", "14~17", "0~17"],
+        datasets: [{
+          label: 'Number ',
+          data: [6.34, 7.62, 8.21, 7.19],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255,99,132,1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+
+
+    //line
+    var ctxL = document.getElementById("lineChart").getContext('2d');
+    var myLineChart = new Chart(ctxL, {
+      type: 'line',
+      data: {
+        labels: ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"],
+        datasets: [{
+          label: "Rate of change(%)",
+          data: [69.7, 72.0, 77.1, 77.4, 76.3, 76.7, 78.6, 79.6, 79.9, 80.3],
+          backgroundColor: [
+            'rgba(105, 0, 132, .2)',
+          ],
+          borderColor: [
+            'rgba(200, 99, 132, .7)',
+          ],
+          borderWidth: 2
+        }
+        ]
+      },
+      options: {
+        responsive: true
+      }
+    });
+
+
+    new Chart(document.getElementById("horizontalBar"), {
+      "type": "horizontalBar",
+      "data": {
+        "labels": ["books", "E-book", "newspaper", "Periodical"],
+        "datasets": [{
+          "label": "Percentage(%)",
+          "data": [4.66, 3.12, 33.62, 4.51],
+          "fill": false,
+          "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 99, 132, 0.2)",
+            "rgba(255, 99, 132, 0.2)", "rgba(255, 99, 132, 0.2)"
+          ],
+          "borderColor": ["rgb(255, 99, 132)", "rgb(255, 99, 132)", "rgb(255, 99, 132)",
+            "rgb(255, 99, 132)"
+          ],
+          "borderWidth": 1
+        },
+        {
+          "label": "Reading volume of various publications in 2016",
+          "data": [3.85, 3.21, 44.64, 3.44],
+          "fill": false,
+          "backgroundColor": ["rgba(75, 192, 192, 0.2)", "rgba(75, 192, 192, 0.2)",
+            "rgba(75, 192, 192, 0.2)", "rgba(75, 192, 192, 0.2)"
+          ],
+          "borderColor": ["rgb(75, 192, 192)", "rgb(75, 192, 192)", "rgb(75, 192, 192)",
+            "rgb(75, 192, 192)"
+          ],
+          "borderWidth": 1
+        }
+        ]
+      },
+      "options": {
+        "scales": {
+          "xAxes": [{
+            "ticks": {
+              "beginAtZero": true
+            }
+          }]
+        }
+      }
+    });
+
+
+
+    var ctxP = document.getElementById("labelChart").getContext('2d');
+    var myPieChart = new Chart(ctxP, {
+      plugins: [ChartDataLabels],
+      type: 'pie',
+      data: {
+        labels: ["Should ", "Shouldn't", "It doesn't matter"],
+        datasets: [{
+          data: [210, 130, 120],
+          backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C"],
+          hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
+        }]
+      },
+      options: {
+        responsive: true,
+        legend: {
+          position: 'right',
+          labels: {
+            padding: 20,
+            boxWidth: 10
+          }
+        },
+        plugins: {
+          datalabels: {
+            formatter: (value, ctx) => {
+              let sum = 0;
+              let dataArr = ctx.chart.data.datasets[0].data;
+              dataArr.map(data => {
+                sum += data;
+              });
+              let percentage = (value * 100 / sum).toFixed(2) + "%";
+              return percentage;
+            },
+            color: 'white',
+            labels: {
+              title: {
+                font: {
+                  size: '16'
+                }
+              }
+            }
+          }
+        }
+      }
+    });
+
+    // 以下为动画效果新添加的两条语句
+    // Adding animations to the sections, 使用的是淡入, 你也可以试试zoomIn等动画
+    $("section").addClass("wow fadeIn");
+    // Animations Init, 注意必须放在ready方法中以防WOW对象没能加载成功
+    $(document).ready(function () {
+      new WOW().init();
+    });
+  </script>
+
+</body>
+
+</html>
